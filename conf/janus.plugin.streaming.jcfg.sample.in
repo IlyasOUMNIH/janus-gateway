@@ -146,6 +146,18 @@ h264-sample: {
 	videofmtp = "profile-level-id=42e01f;packetization-mode=1"
 }
 
+theta-rpi: {
+	type = "rtp"
+	id = 11
+	description = "Theta"
+	audio = false
+	video = true
+	videoport = 8080
+	videopt = 96
+	videortpmap = "H264/90000"
+	videofmtp = "profile-level-id=42e028;packetization-mode=1"
+} 
+
 #
 # The Streaming plugin also supports the broadcasting of datachannel
 # messages, either by themselves or along other audio/video streams (e.g.,
