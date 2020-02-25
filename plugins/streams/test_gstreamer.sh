@@ -20,4 +20,4 @@ gst-launch \
 		video/x-raw-rgb,width=320,height=240,framerate=15/1 ! \
 		videoscale ! videorate ! ffmpegcolorspace ! timeoverlay ! \
 		vp8enc bitrate=256000 speed=2 max-latency=1 error-resilient=true ! \
-			rtpvp8pay ! udpsink host=127.0.0.1 port=5006
+			rtpvp8pay ! udpsink host=127.0.0.1 port=5004
