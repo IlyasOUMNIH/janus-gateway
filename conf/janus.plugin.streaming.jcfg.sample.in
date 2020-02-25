@@ -137,23 +137,11 @@ file-ondemand-sample: {
 h264-sample: {
 	type = "rtp"
 	id = 10
-	description = "H.264 live stream coming from gstreamer"
+	description = "THETA V"
 	audio = false
 	video = true
 	videoport = 8004
 	videopt = 126
-	videortpmap = "H264/90000"
-	videofmtp = "profile-level-id=42e01f;packetization-mode=1"
-}
-
-theta-rpi: {
-	type = "rtp"
-	id = 11
-	description = "Theta"
-	audio = false
-	video = true
-	videoport = 8080
-	videopt = 96
 	videortpmap = "H264/90000"
 	videofmtp = "profile-level-id=42e01f;packetization-mode=1"
 } 
