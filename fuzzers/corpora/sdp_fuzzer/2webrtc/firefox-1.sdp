@@ -22,12 +22,13 @@ a=rtpmap:0 PCMU/8000
 a=rtpmap:8 PCMA/8000
 a=setup:actpass
 a=ssrc:2121669360 cname:{387b0735-bde2-43a4-8484-7f5663b60f24}
-m=video 9 UDP/TLS/RTP/SAVPF 120 126 97
+m=video 9 UDP/TLS/RTP/SAVPF 120 126 97 96
 c=IN IP4 0.0.0.0
 a=sendrecv
 a=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1
 a=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1
 a=fmtp:120 max-fs=12288;max-fr=60
+a=fmtp:96 packetization-mode=1; sprop-parameter-sets=Z2QAKKwspAHgCJ+X/wABAAFSAgICgAAB9IAAdTBwEAAW42AACJVF+McHaFi0SA==,aOtzUlA=; profile-level-id=640028
 a=ice-pwd:b9f3911b591ae61e2d7f6af0531fd2a3
 a=ice-ufrag:3edc9012
 a=mid:sdparta_1
@@ -41,10 +42,14 @@ a=rtcp-fb:126 ccm fir
 a=rtcp-fb:97 nack
 a=rtcp-fb:97 nack pli
 a=rtcp-fb:97 ccm fir
+a=rtcp-fb:96 nack
+a=rtcp-fb:96 nack pli
+a=rtcp-fb:96 ccm fir
 a=rtcp-mux
 a=rtpmap:120 VP8/90000
 a=rtpmap:126 H264/90000
 a=rtpmap:97 H264/90000
+a=rtpmap:96 H264/90000
 a=setup:actpass
 a=ssrc:2158832026 cname:{387b0735-bde2-43a4-8484-7f5663b60f24}
 m=application 9 DTLS/SCTP 5000
