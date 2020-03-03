@@ -136,7 +136,7 @@ file-ondemand-sample: {
 #
 h264-sampl: {
 	type = "rtp"
-	id = 10
+	id = 9
 	description = "THETA V"
 	audio = false
 	video = true
