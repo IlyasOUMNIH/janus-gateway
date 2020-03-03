@@ -134,7 +134,7 @@ file-ondemand-sample: {
 # example of how to create a simple H.264 mountpoint: you can feed it via
 # an x264enc+rtph264pay pipeline in gstreamer, an ffmpeg script or other.
 #
-h264-sample: {
+h264-sampl: {
 	type = "rtp"
 	id = 10
 	description = "THETA V"
