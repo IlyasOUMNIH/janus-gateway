@@ -1,5 +1,5 @@
 v=0
-o=mozilla...THIS_IS_SDPARTA-46.0.1 5115930144083302970 0 IN IP4 0.0.0.0
+o=- 0 0 IN IP4 127.0.0.1
 s=-
 t=0 0
 a=fingerprint:sha-256 24:67:5E:1B:9A:B9:CF:36:C5:30:8F:35:F7:B1:50:66:88:81:92:CB:29:BA:53:A5:02:C8:0A:A5:4E:9C:AE:D9
@@ -22,13 +22,15 @@ a=rtpmap:0 PCMU/8000
 a=rtpmap:8 PCMA/8000
 a=setup:actpass
 a=ssrc:2121669360 cname:{387b0735-bde2-43a4-8484-7f5663b60f24}
-m=video 9 UDP/TLS/RTP/SAVPF 120 126 97 96
-c=IN IP4 0.0.0.0
+m=video 9 UDP/TLS/RTP/SAVPF 120 126 97
+m=video 8004 RTP/AVP 96
+c=IN IP4 127.0.0.1
+a=tool:libavformat 56.40.101
 a=sendrecv
 a=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1
 a=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1
 a=fmtp:120 max-fs=12288;max-fr=60
-a=fmtp:96 packetization-mode=1; sprop-parameter-sets=Z2QAKKwspAHgCJ+X/wABAAFSAgICgAAB9IAAdTBwEAAW42AACJVF+McHaFi0SA==,aOtzUlA=; profile-level-id=640028
+a=fmtp:96 packetization-mode=1; sprop-parameter-sets=Z2QAKKwspAHgCJ+X/wABAAFSAgICgAAB9IAAdTBwEAAW42AACJVF+McHaFi0SA==,aOtzUlA=; profile-level-id=64001F
 a=ice-pwd:b9f3911b591ae61e2d7f6af0531fd2a3
 a=ice-ufrag:3edc9012
 a=mid:sdparta_1
