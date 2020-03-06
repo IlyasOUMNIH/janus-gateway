@@ -171,7 +171,6 @@ $(document).ready(function() {
 									Janus.debug(" ::: Got a remote stream :::");
 									Janus.debug(stream);
 									var addButtons = false;
-									if($('#remotevideo').length === 0) {
 										addButtons = true;
 										$('#stream').append('<video class="rounded centered hide" id="remotevideo" width=320 height=240 autoplay playsinline/>');
 										// Show the stream and hide the spinner when we get a playing event
@@ -197,7 +196,6 @@ $(document).ready(function() {
 												}, 2000);
 											}
 										});
-									}
 									Janus.attachMediaStream($('#remotevideo').get(0), stream);
 									var videoTracks = stream.getVideoTracks();
 									if(videoTracks === null || videoTracks === undefined || videoTracks.length === 0) {
