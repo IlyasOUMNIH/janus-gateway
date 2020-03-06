@@ -4301,7 +4301,7 @@ done:
 			if(mp->codecs.audio_pt >= 0 && session->audio) {
 				/* Add audio line */
 				g_snprintf(buffer, 512,
-					"m=audio 1 RTP/SAVPF %d\r\n"
+					"m=audio 1 RTP/AVP %d\r\n"
 					"c=IN IP4 1.1.1.1\r\n",
 					mp->codecs.audio_pt);
 				g_strlcat(sdptemp, buffer, 2048);
