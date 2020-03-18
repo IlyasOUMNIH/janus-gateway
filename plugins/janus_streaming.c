@@ -4334,7 +4334,7 @@ done:
 				}
 				if(mp->codecs.video_fmtp) {
 					g_snprintf(buffer, 512,
-						"a=fmtp:96 packetization-mode=1;sprop-parameter-sets=Z2QAHqzTAoCmlIKDAwNoUJTg,a04G4sA=;profile-level-id=64001F\r\n");
+						"a=fmtp:96 packetization-mode=1\;sprop-parameter-sets=Z2QAKKzZQHgCJ+WEAAADAAQAAAMA8jxgxlg=,aO+8sA==\;profile-level-id=640028\r\n");
 					g_strlcat(sdptemp, buffer, 2048);
 				}
 				g_snprintf(buffer, 512,
