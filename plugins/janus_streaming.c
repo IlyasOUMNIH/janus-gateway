@@ -4338,7 +4338,7 @@ done:
 					g_strlcat(sdptemp, buffer, 2048);
 				}
 				g_snprintf(buffer, 512,
-					"a=tool:libavformat 56.40.101\r\n");
+					"a=tool:libavformat 57.83.100\r\n");
 				g_strlcat(sdptemp, buffer, 2048);
 				g_snprintf(buffer, 512,
 					"a=rtcp-fb:96 nack\r\n");
