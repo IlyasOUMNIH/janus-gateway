@@ -4324,7 +4324,7 @@ done:
 			if(mp->codecs.video_pt > 0 && session->video) {
 				/* Add video line */
 				g_snprintf(buffer, 512,
-					"m=video 1 RTP/AVP 126\r\n"
+					"m=video 8004 RTP/AVP 126\r\n"
 					"c=IN IP4 1.1.1.1\r\n");
 				g_strlcat(sdptemp, buffer, 2048);
 				g_snprintf(buffer, 512,
