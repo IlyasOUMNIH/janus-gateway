@@ -4324,7 +4324,7 @@ done:
 			if(mp->codecs.video_pt > 0 && session->video) {
 				/* Add video line */
 				g_snprintf(buffer, 512,
-					"m=video 1 RTP/AVP 96\r\n"
+					"m=video 1 RTP/AVP 126\r\n"
 					"c=IN IP4 1.1.1.1\r\n");
 				g_strlcat(sdptemp, buffer, 2048);
 				g_snprintf(buffer, 512,
@@ -4332,25 +4332,25 @@ done:
 				g_strlcat(sdptemp, buffer, 2048);
 				if(mp->codecs.video_rtpmap) {
 					g_snprintf(buffer, 512,
-						"a=rtpmap:96 H264/90000\r\n");
+						"a=rtpmap:126 H264/90000\r\n");
 					g_strlcat(sdptemp, buffer, 2048);
 				}
 				if(mp->codecs.video_fmtp) {
 					g_snprintf(buffer, 512,
-						"a=fmtp:96 profile-level-id=640028;packetization-mode=1;sprop-parameter-sets=Z2QAKKzZQHgCJ+WEAAADAAQAAAMA8jxgxlg=,aO+8sA==\r\n");
+						"a=fmtp:126 profile-level-id=640028;packetization-mode=1;sprop-parameter-sets=Z2QAKKzZQHgCJ+WEAAADAAQAAAMA8jxgxlg=,aO+8sA==\r\n");
 					g_strlcat(sdptemp, buffer, 2048);
 				}
 				g_snprintf(buffer, 512,
 					"a=tool:libavformat 57.83.100\r\n");
 				g_strlcat(sdptemp, buffer, 2048);
 				g_snprintf(buffer, 512,
-					"a=rtcp-fb:96 nack\r\n");
+					"a=rtcp-fb:126 nack\r\n");
 				g_strlcat(sdptemp, buffer, 2048);
 				g_snprintf(buffer, 512,
-					"a=rtcp-fb:96 nack pli\r\n");
+					"a=rtcp-fb:126 nack pli\r\n");
 				g_strlcat(sdptemp, buffer, 2048);
 				g_snprintf(buffer, 512,
-					"a=rtcp-fb:96 goog-remb\r\n");
+					"a=rtcp-fb:126 goog-remb\r\n");
 				g_strlcat(sdptemp, buffer, 2048);
 				g_strlcat(sdptemp, "a=sendonly\r\n", 2048);
 				g_snprintf(buffer, 512, "a=extmap:%d %s\r\n", 1, JANUS_RTP_EXTMAP_MID);
