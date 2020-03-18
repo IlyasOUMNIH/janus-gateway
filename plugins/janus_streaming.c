@@ -4295,7 +4295,7 @@ done:
 					"-", session->sdp_sessid, session->sdp_version);
 			g_strlcat(sdptemp, buffer, 2048);
 			g_snprintf(buffer, 512,
-				"s=Mountpoint %s\r\n", mp->id_str);
+				"s=Mountpoint %"SCNu64"\r\n", mp->id);
 			g_strlcat(sdptemp, buffer, 2048);
 			g_strlcat(sdptemp, "t=0 0\r\n", 2048);
 			if(mp->codecs.audio_pt >= 0 && session->audio) {
